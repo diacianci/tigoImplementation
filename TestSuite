@@ -1,0 +1,66 @@
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+public class TestSuite {
+	
+	@Test
+	public void NumberofPieces()
+	{
+		
+		assertEquals(4, Game.tigers.length);
+		assertEquals(20, Game.goats.length);
+	}
+	
+	@Test
+	public void Board()
+	{
+		assertEquals(25, Game.countBoard(5,5));
+		
+	}
+	
+	
+//	@Test
+//	public void FirstTurn()
+//	{
+//		assertEquals(25, Game.countBoard(5,5));
+//		assertEquals("T", Game.board[0][0]);
+//		assertEquals("T", Game.board[0][5]);
+//		assertEquals("T", Game.board[5][0]);
+//		assertEquals("T", Game.board[5][5]);
+//		
+//	}
+	
+	@Test
+	public void TestStartTigers()
+	{
+		assertEquals(0,Game.tigers[0].positionX1);
+		assertEquals(0,Game.tigers[0].positionY1);
+		
+		assertEquals(0,Game.tigers[1].positionX2);
+		assertEquals(4,Game.tigers[1].positionY2);
+		
+		assertEquals(4,Game.tigers[2].positionX3);
+		assertEquals(0,Game.tigers[2].positionY3);
+		
+		assertEquals(4,Game.tigers[3].positionX4);
+		assertEquals(4,Game.tigers[3].positionY4);
+	}
+	
+	@Test
+	public void firstTurn()
+	{
+		assertEquals(0, Game.turn);
+	}
+	
+	@Test
+	public void takingTurns()
+	{
+		Game.nextTurn();
+		assertEquals(1, Game.turn);
+		Game.nextTurn();
+		assertEquals(0, Game.turn);
+	}
+	
+	
+}
