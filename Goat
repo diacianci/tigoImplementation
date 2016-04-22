@@ -1,0 +1,9 @@
+
+public class Goat {
+	
+	static int positionX = 0;
+	static int positionY = 0;
+	
+	
+	
+}
