@@ -1,0 +1,15 @@
+
+public class Tiger {
+
+	static int positionX1 = 0;
+	static int positionY1 = 0;
+	
+	static int positionX2 = 0;
+	static int positionY2 = 4;
+	
+	static int positionX3 = 4;
+	static int positionY3 = 0;
+	
+	static int positionX4 = 4;
+	static int positionY4 = 4;
+}
